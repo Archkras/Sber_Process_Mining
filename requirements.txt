@@ -5,7 +5,7 @@ scipy>=1.4.1
 
 # Graphs + vizualisation
 pydotplus>=2.0.2
-graphviz>=0.13.2,!=0.18
+graphviz==0.16
 plotly>=4.9.0
 IPython~=7.25.0
 # needed for IPython:
