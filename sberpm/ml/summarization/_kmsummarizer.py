@@ -35,7 +35,7 @@ class KMeansSummarizer:
         self.clear_text = clear_texts if clear_texts else None
         self.texts = texts
 
-        if type(self.texts) == 'list':
+        if type(self.texts) is list:
             self.texts = pd.Series(self.texts)
 
         self.texts = self.texts.reset_index(drop=True)
