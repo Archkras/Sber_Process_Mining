@@ -327,7 +327,7 @@ class GraphvizPainter:
         digraph : IPython.core.display.HTML
             Graph in HTML format.
         """
-        return HTML(self._digraph._repr_svg_())
+        return HTML(self._digraph._repr_image_svg_xml()) # _repr_svg_
 
     @staticmethod
     def _add_metrics_to_node_label(label, metrics):
